@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import "./tokens.css";
-
+@import "@fontsource/bowlby-one";
 @layer base {
   :root {
     color: var(--color-text-main);
@@ -92,6 +92,7 @@
     @apply m-0 leading-none tracking-tight;
     font-size: clamp(1.9rem, 4.8vw, 3.4rem);
     text-wrap: balance;
+    font-family: "Bowlby One", system-ui;
   }
 
   .hero-description {
