@@ -3,10 +3,25 @@
     class="surface-panel flex items-center justify-between gap-4 px-5 py-4 lg:px-6 lg:py-4"
   >
     <a
-      class="text-lg font-extrabold tracking-tight no-underline"
+      class="text-lg font-extrabold tracking-tight no-underline flex items-center gap-2"
       href="/"
-      aria-label="Pet Platform home"
+      aria-label="PetPlatform home"
     >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="22"
+        viewBox="0 0 100 100"
+        fill="currentColor"
+        class="text-green-main"
+        aria-hidden="true"
+      >
+        <ellipse cx="28" cy="38" rx="10" ry="13" />
+        <ellipse cx="42" cy="22" rx="10" ry="13" />
+        <ellipse cx="58" cy="22" rx="10" ry="13" />
+        <ellipse cx="72" cy="38" rx="10" ry="13" />
+        <path d="M50 44c-18 0-26 10-26 22 0 10 6 16 26 16s26-6 26-16c0-12-8-22-26-22z" />
+      </svg>
       Pet<span class="text-green-main">Platform</span>
     </a>
 
@@ -14,15 +29,20 @@
       class="text-muted hidden items-center gap-5 text-sm font-medium lg:flex"
       aria-label="Main navigation"
     >
+      <a class="no-underline" href="#">Home</a>
       <a class="no-underline" href="#">Adoption</a>
       <a class="no-underline" href="#">Lost &amp; Found</a>
       <a class="no-underline" href="#">How it works</a>
-      <a class="no-underline" href="#">Report</a>
+      <a class="no-underline" href="#">About Us</a>
     </nav>
 
     <div class="flex items-center gap-3">
       <a class="pill-link px-3 py-2 text-sm" href="#">Sign in</a>
-      <a class="pill-link bg-green-main border px-4 py-2.5 text-sm" href="#">
+      <a
+        class="pill-link bg-green-main border px-4 py-2.5 text-sm"
+        href="#"
+        style="border-color: transparent;"
+      >
         Join Community
       </a>
     </div>
