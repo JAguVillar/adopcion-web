@@ -67,6 +67,20 @@ Ambas deben convivir sin confundir al usuario.
 - Lost & Found shows timestamp and location
 - Buttons adapt to context (Adopt / Contact / Report)
 
+## Responsive behavior
+
+- Desktop: hero split en dos columnas
+- Mobile: hero split colapsa en cards verticales
+- El orden en mobile es:
+  1. Adoption
+  2. Lost & Found
+- CTAs siempre visibles y accesibles
+
+## Visual references
+
+UI reference screenshots are located in /design/references.
+Codex should use them as visual inspiration and respect layout, spacing and hierarchy.
+
 ## Definition of Done
 
 - Home implementada con Astro + Tailwind
@@ -74,3 +88,4 @@ Ambas deben convivir sin confundir al usuario.
 - Responsive
 - Datos mock
 - Código limpio y semántico
+  \
