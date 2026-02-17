@@ -1,0 +1,104 @@
+<section class="hero" aria-label="Pet platform main actions">
+  <div class="hero-grid">
+    <article class="hero-card adoption" aria-labelledby="adoption-title">
+      <p class="kicker">Adoption</p>
+      <h1 id="adoption-title">Find your next best friend</h1>
+      <p class="description">
+        Explore verified pets ready for adoption and meet your perfect companion.
+      </p>
+      <a class="cta" href="#">Browse Pets</a>
+    </article>
+
+    <article class="hero-card lost-found" aria-labelledby="lost-title">
+      <p class="kicker">Lost &amp; Found</p>
+      <h2 id="lost-title">Help bring pets back home</h2>
+      <p class="description">
+        Report missing or found pets quickly so neighbors can reunite families.
+      </p>
+      <a class="cta" href="#">Report a Pet</a>
+    </article>
+  </div>
+</section>
+
+<style>
+  .hero {
+    width: min(100% - 2rem, var(--container-max));
+    margin-inline: auto;
+    padding-block: 0.5rem 2.5rem;
+  }
+
+  .hero-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .hero-card {
+    border-radius: var(--radius-3xl);
+    box-shadow: var(--shadow-card);
+    padding: 2rem 1.5rem;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .adoption {
+    background: var(--color-green-soft);
+  }
+
+  .lost-found {
+    background: var(--color-coral-soft);
+  }
+
+  .kicker {
+    margin: 0;
+    font-size: 0.92rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  h1,
+  h2 {
+    margin: 0;
+    font-size: clamp(1.9rem, 4.8vw, 3.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+  }
+
+  .description {
+    margin: 0;
+    max-width: 32ch;
+    font-size: 1.05rem;
+    color: var(--color-text-muted);
+  }
+
+  .cta {
+    justify-self: start;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--radius-pill);
+    font-weight: 700;
+    color: var(--color-text-main);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-soft);
+  }
+
+  @media (min-width: 64rem) {
+    .hero {
+      padding-block: 1rem 3rem;
+    }
+
+    .hero-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    .hero-card {
+      min-height: 25rem;
+      align-content: center;
+      padding: 2.8rem;
+      gap: 1.25rem;
+    }
+  }
+</style>
