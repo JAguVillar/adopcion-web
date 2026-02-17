@@ -53,6 +53,7 @@
     @apply grid gap-4 border p-8;
     border-radius: var(--radius-3xl);
     border-color: color-mix(in oklab, var(--color-text-main) 8%, white);
+    height: 100vh;
   }
 
   .hero-card-adoption {
