@@ -14,8 +14,5 @@
   --radius-2xl: 2rem;
   --radius-3xl: 2.5rem;
 
-  --shadow-soft: 0 14px 30px color-mix(in oklab, var(--color-text-main) 10%, transparent);
-  --shadow-card: 0 18px 36px color-mix(in oklab, var(--color-text-main) 12%, transparent);
-
   --container-max: 76rem;
 }

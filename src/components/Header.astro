@@ -1,106 +1,21 @@
-<header class="site-header" aria-label="Main header">
-  <div class="header-container">
-    <a class="logo" href="/" aria-label="Pet Platform home">Pet<span>Platform</span></a>
+<header class="content-shell py-6 lg:py-8" aria-label="Main header">
+  <div class="surface-panel flex items-center justify-between gap-4 px-5 py-4 lg:px-6 lg:py-4">
+    <a class="text-lg font-extrabold tracking-tight no-underline" href="/" aria-label="Pet Platform home">
+      Pet<span class="text-green-main">Platform</span>
+    </a>
 
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="#">Adoption</a>
-      <a href="#">Lost &amp; Found</a>
-      <a href="#">How it works</a>
-      <a href="#">Report</a>
+    <nav class="text-muted hidden items-center gap-5 text-sm font-medium lg:flex" aria-label="Main navigation">
+      <a class="no-underline" href="#">Adoption</a>
+      <a class="no-underline" href="#">Lost &amp; Found</a>
+      <a class="no-underline" href="#">How it works</a>
+      <a class="no-underline" href="#">Report</a>
     </nav>
 
-    <div class="header-actions">
-      <a class="sign-in" href="#">Sign in</a>
-      <a class="join-btn" href="#">Join Community</a>
+    <div class="flex items-center gap-3">
+      <a class="pill-link px-3 py-2 text-sm" href="#">Sign in</a>
+      <a class="pill-link bg-green-main border px-4 py-2.5 text-sm" href="#">
+        Join Community
+      </a>
     </div>
   </div>
 </header>
-
-<style>
-  .site-header {
-    width: min(100% - 2rem, var(--container-max));
-    margin-inline: auto;
-    padding-block: 1.5rem;
-  }
-
-  .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    background: var(--color-surface);
-    border-radius: var(--radius-3xl);
-    padding: 0.9rem 1.25rem;
-    box-shadow: var(--shadow-soft);
-  }
-
-  .logo {
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-  }
-
-  .logo span {
-    color: var(--color-green-main);
-  }
-
-  .main-nav {
-    display: none;
-    align-items: center;
-    gap: 1.25rem;
-    color: var(--color-text-muted);
-    font-weight: 500;
-  }
-
-  .main-nav a {
-    text-decoration: none;
-  }
-
-  .header-actions {
-    display: flex;
-    align-items: center;
-    gap: 0.65rem;
-  }
-
-  .sign-in,
-  .join-btn {
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: var(--radius-pill);
-    white-space: nowrap;
-  }
-
-  .sign-in {
-    padding: 0.5rem 0.8rem;
-    color: var(--color-text-main);
-  }
-
-  .join-btn {
-    background: var(--color-green-main);
-    color: var(--color-text-main);
-    padding: 0.62rem 1rem;
-  }
-
-  @media (min-width: 56rem) {
-    .site-header {
-      padding-block: 2rem;
-    }
-
-    .header-container {
-      padding: 1rem 1.5rem;
-    }
-
-    .main-nav {
-      display: flex;
-    }
-
-    .sign-in {
-      padding-inline: 1rem;
-    }
-
-    .join-btn {
-      padding-inline: 1.2rem;
-    }
-  }
-</style>
