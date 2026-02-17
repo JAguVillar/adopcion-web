@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+:root {
+  --green-soft: #dff7ec;
+  --green-main: #2ee59d;
+  --coral-soft: #ffe8e5;
+  --coral-main: #ff7d6e;
+  --bg-main: #f6f7f7;
+  --text-main: #0f172a;
+}
