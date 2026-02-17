@@ -1,0 +1,18 @@
+:root {
+  --color-green-soft: #dff7ec;
+  --color-green-main: #2ee59d;
+  --color-coral-soft: #ffe8e5;
+  --color-coral-main: #ff7d6e;
+  --color-bg-main: #f6f7f7;
+  --color-text-main: #0f172a;
+  --color-text-muted: color-mix(in oklab, var(--color-text-main) 72%, white);
+  --color-surface: #ffffff;
+
+  --radius-pill: 9999px;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-3xl: 2.5rem;
+
+  --container-max: 76rem;
+}

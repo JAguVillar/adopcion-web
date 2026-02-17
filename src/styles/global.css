@@ -1,10 +1,98 @@
 @import "tailwindcss";
+@import "./tokens.css";
 
-:root {
-  --green-soft: #dff7ec;
-  --green-main: #2ee59d;
-  --coral-soft: #ffe8e5;
-  --coral-main: #ff7d6e;
-  --bg-main: #f6f7f7;
-  --text-main: #0f172a;
+@layer base {
+  :root {
+    color: var(--color-text-main);
+    background-color: var(--color-bg-main);
+  }
+
+  body {
+    @apply m-0 min-h-screen;
+    background-color: var(--color-bg-main);
+    color: var(--color-text-main);
+    font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+@layer components {
+  .content-shell {
+    @apply w-full px-4 mx-auto;
+    max-width: var(--container-max);
+  }
+
+  .surface-panel {
+    @apply border;
+    border-color: color-mix(in oklab, var(--color-text-main) 10%, white);
+    border-radius: var(--radius-3xl);
+    background-color: var(--color-surface);
+  }
+
+  .pill-link {
+    @apply no-underline font-semibold whitespace-nowrap;
+    border-radius: var(--radius-pill);
+  }
+
+  .text-muted {
+    color: var(--color-text-muted);
+  }
+
+  .text-green-main {
+    color: var(--color-green-main);
+  }
+
+  .bg-green-main {
+    background-color: var(--color-green-main);
+  }
+
+  .hero-card {
+    @apply grid gap-4 border p-8;
+    border-radius: var(--radius-3xl);
+    border-color: color-mix(in oklab, var(--color-text-main) 8%, white);
+  }
+
+  .hero-card-adoption {
+    background-color: var(--color-green-soft);
+  }
+
+  .hero-card-lost-found {
+    background-color: var(--color-coral-soft);
+  }
+
+  .hero-kicker {
+    @apply m-0 text-sm font-bold uppercase tracking-wider;
+    color: var(--color-text-muted);
+  }
+
+  .hero-title {
+    @apply m-0 leading-none tracking-tight;
+    font-size: clamp(1.9rem, 4.8vw, 3.4rem);
+    text-wrap: balance;
+  }
+
+  .hero-description {
+    @apply m-0 text-base;
+    max-width: 32ch;
+    color: var(--color-text-muted);
+  }
+
+  .hero-cta {
+    @apply justify-self-start no-underline font-bold border px-5 py-3;
+    border-radius: var(--radius-pill);
+    border-color: color-mix(in oklab, var(--color-text-main) 12%, white);
+    background-color: var(--color-surface);
+    color: var(--color-text-main);
+  }
+
+  @media (min-width: 64rem) {
+    .hero-card {
+      @apply p-11;
+      min-height: 25rem;
+      align-content: center;
+    }
+  }
 }
