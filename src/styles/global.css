@@ -49,12 +49,30 @@
     background-color: var(--color-green-main);
   }
 
+  .hero-section {
+    height: calc(100svh - var(--hero-header-offset, 7.5rem));
+    box-sizing: border-box;
+  }
+
+  .hero-grid {
+    display: grid;
+    height: 100%;
+    grid-auto-rows: 1fr;
+  }
+
+  @media (min-width: 64rem) {
+    .hero-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-auto-rows: auto;
+    }
+  }
+
   .hero-card {
     @apply grid gap-4 border p-8;
     border-radius: var(--radius-3xl);
     border-color: color-mix(in oklab, var(--color-text-main) 8%, white);
-    min-height: calc(100svh - var(--hero-header-offset, 7.5rem));
-    max-height: calc(100svh - var(--hero-header-offset, 7.5rem));
+    min-height: 0;
   }
 
   .hero-card-adoption {
