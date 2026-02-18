@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"Z:/Code/adopcion/web\" show HEAD:src/components/Footer.astro)",
+      "Bash(git -C \"Z:/Code/adopcion/web\" show HEAD:src/components/CTASection.astro)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(git -C \"Z:/Code/adopcion/web\" show HEAD:src/components/FeaturesSection.astro)",
+      "Bash(npx astro build)",
+      "Bash(npx astro dev:*)",
+      "Bash(timeout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git push:*)",
+      "Bash(gh pr create --base master --title \"refactor: migrate CSS component classes to Tailwind v4 utilities\" --body \"$\\(cat <<''EOF''\n## Summary\n- Register all design tokens via Tailwind v4 `@theme` block, enabling native utility classes \\(`text-green-main`, `bg-coral-soft`, `rounded-3xl`, `font-display`, `text-hero`, etc.\\)\n- Inline all hero and header component CSS classes as Tailwind utilities directly in `.astro` files\n- Remove ~400 lines of dead CSS for deleted components \\(Stats, Features, CTA, Footer\\) and commented-out sections \\(hero-search, hero-kicker\\)\n- Reduce `global.css` from 470 → 65 lines \\(88% reduction\\)\n- Fix broken `Footer` import in `index.astro`\n\n## Test plan\n- [ ] Run `npm run dev` and verify the page renders identically to before\n- [ ] Verify responsive layout: desktop \\(2-column hero\\) and mobile \\(stacked cards\\)\n- [ ] Verify Tailwind-generated utilities work: `text-green-main`, `bg-coral-soft`, `rounded-3xl`, `font-display`, `text-hero`\n- [ ] Run `npx astro build` — should complete without errors\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\nEOF\n\\)\")",
+      "Bash(where:*)",
+      "Bash(where.exe:*)",
+      "Bash(git remote get-url:*)",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}
