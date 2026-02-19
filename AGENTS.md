@@ -88,4 +88,16 @@ Codex should use them as visual inspiration and respect layout, spacing and hier
 - Responsive
 - Datos mock
 - Código limpio y semántico
-  \
+
+## Skills disponibles
+
+Puedes usar las siguientes skills como referencia prioritaria:
+
+- .agent/skills/web-design-guidelines
+- .agent/skills/brainstorming
+
+Estas skills definen:
+
+- criterios de diseño
+- decisiones de layout
+- tono visual
