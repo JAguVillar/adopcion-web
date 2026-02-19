@@ -1,56 +1,19 @@
 @import "tailwindcss";
-@import "./tokens.css";
 @import "@fontsource/bowlby-one";
 @import "@fontsource-variable/nunito";
 
 @theme {
-  /* ── Colors ── */
-  --color-green-soft: #dff7ec;
-  --color-green-main: #2ee59d;
-  --color-green-dark: #1aca87;
-  --color-coral-soft: #ffe8e5;
-  --color-coral-main: #ff7d6e;
-  --color-coral-dark: #ff5a4a;
-  --color-bg-main: #f6f7f7;
-  --color-text-main: #0f172a;
-  --color-muted: color-mix(in oklab, #0f172a 72%, white);
-  --color-surface: #ffffff;
-  --color-dark-bg: #1a1e2e;
-  --color-dark-surface: #242838;
-  --color-green-cta-bg: #e8faf2;
-  --color-border-subtle: color-mix(in oklab, #0f172a 8%, white);
-  --color-border-medium: color-mix(in oklab, #0f172a 10%, white);
-  --color-border-strong: color-mix(in oklab, #0f172a 12%, white);
-
-  /* ── Hover states ── */
-  --color-green-hover: color-mix(in oklab, #dff7ec 40%, #2ee59d);
-  --color-coral-hover: color-mix(in oklab, #ffe8e5 40%, #ff7d6e);
-  --color-section-green-tint: color-mix(in oklab, #f6f7f7 60%, #dff7ec);
-  --color-section-coral-tint: color-mix(in oklab, #f6f7f7 60%, #ffe8e5);
-
-  /* ── Radii ── */
-  --radius-lg: 1rem;
-  --radius-xl: 1.5rem;
-  --radius-2xl: 2rem;
-  --radius-3xl: 2.5rem;
-
-  /* ── Typography ── */
+  /* Font stacks — required for font-display / font-body utilities */
   --font-display: "Bowlby One", system-ui;
   --font-body: "Nunito Variable", system-ui;
+
+  /* Fluid hero type — no Tailwind equivalent for clamp() */
   --text-hero: clamp(1.9rem, 4.8vw, 3.4rem);
-  --text-hero--line-height: 1;
 }
 
 @layer base {
-  :root {
-    color: var(--color-text-main);
-    background-color: var(--color-bg-main);
-  }
-
   body {
-    @apply m-0 min-h-screen transition-colors duration-500 ease-out;
-    background-color: var(--color-bg-main);
-    color: var(--color-text-main);
+    @apply m-0 min-h-screen bg-gray-50 text-slate-900 transition-colors duration-500 ease-out;
     font-family: var(--font-body);
   }
 
@@ -59,23 +22,7 @@
   }
 }
 
-@layer components {
-  /* Layout container — reused across all pages */
-  .content-shell {
-    @apply w-full px-4 mx-auto max-w-[76rem];
-  }
-
-  /* Hero layout — complex calc-based min-height */
-  .hero-section {
-    min-height: calc(100svh - var(--hero-header-offset, 7.5rem));
-    @apply box-border flex flex-col;
-  }
-}
-
-h1 span {
-  font-size: var(--text-hero);
-}
-
+h1 span,
 h2 span {
   font-size: var(--text-hero);
 }
