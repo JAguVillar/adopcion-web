@@ -1,5 +1,5 @@
 <section
-  class="content-shell hero-section pt-2 pb-10 lg:pt-4 lg:pb-12
+  class="w-full px-4 mx-auto max-w-[76rem] min-h-[calc(100svh-7.5rem)] box-border flex flex-col pt-2 pb-10 lg:pt-4 lg:pb-12
          motion-safe:transition-[background-color] motion-safe:duration-500 ease-out"
   aria-label="Pet platform main actions"
 >
@@ -8,9 +8,9 @@
   >
     <article
       class="group/green card-green
-             grid gap-4 rounded-3xl p-8 lg:p-11 min-h-0 bg-green-soft lg:content-center
-             hover:bg-green-hover hover:z-10
-             focus-within:bg-green-hover
+             grid gap-4 rounded-3xl p-8 lg:p-11 min-h-0 bg-emerald-50 lg:content-center
+             hover:bg-emerald-200 hover:z-10
+             focus-within:bg-emerald-200
              motion-safe:transition-[background-color] motion-safe:duration-300 ease-in-out"
       aria-labelledby="adoption-title"
     >
@@ -19,29 +19,29 @@
         class="m-0 leading-none tracking-tight text-hero text-balance font-display"
       >
         Encuentra a tu nuevo<br /><span
-          class="text-green-main group-hover/green:text-green-dark motion-safe:transition-colors motion-safe:duration-300"
+          class="text-emerald-400 group-hover/green:text-emerald-500 motion-safe:transition-colors motion-safe:duration-300"
           >mejor amigo</span
         >
       </h1>
-      <p class="max-w-[32ch] text-muted font-semibold">
+      <p class="max-w-[32ch] text-slate-600 font-semibold">
         Descubre miles de mascotas adoptables en tu área local esperando un
         hogar para siempre.
       </p>
       <a
         class="justify-self-start no-underline font-bold border border-transparent rounded-full px-5 py-3
-               bg-green-main text-text-main
-               hover:bg-green-dark motion-safe:hover:scale-105
+               bg-emerald-400 text-slate-900
+               hover:bg-emerald-500 motion-safe:hover:scale-105
                motion-safe:transition-[transform,background-color] motion-safe:duration-200 ease-out
-               focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-main"
+               focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
         href="#">Buscar mascotas ♥</a
       >
     </article>
 
     <article
       class="group/coral card-coral
-             grid gap-4 rounded-3xl p-8 lg:p-11 min-h-0 bg-coral-soft lg:content-center
-             hover:bg-coral-hover hover:z-10
-             focus-within:bg-coral-hover
+             grid gap-4 rounded-3xl p-8 lg:p-11 min-h-0 bg-rose-50 lg:content-center
+             hover:bg-rose-200 hover:z-10
+             focus-within:bg-rose-200
              motion-safe:transition-[background-color] motion-safe:duration-300 ease-in-out"
       aria-labelledby="lost-title"
     >
@@ -50,20 +50,20 @@
         class="m-0 leading-none tracking-tight text-hero text-balance font-display"
       >
         Ayuda a que encuentren<br /><span
-          class="text-coral-main group-hover/coral:text-coral-dark motion-safe:transition-colors motion-safe:duration-300"
+          class="text-rose-400 group-hover/coral:text-rose-500 motion-safe:transition-colors motion-safe:duration-300"
           >su camino a casa</span
         >
       </h2>
-      <p class="max-w-[32ch] text-muted font-semibold">
+      <p class="max-w-[32ch] text-slate-600 font-semibold">
         Perdiste a un animal o encontraste uno? Nuestra comunidad está aquí para
         ayudar a traerlos a casa de manera segura.
       </p>
       <a
         class="justify-self-start no-underline font-bold border border-transparent rounded-full px-5 py-3
-               bg-coral-main text-white
-               hover:bg-coral-dark motion-safe:hover:scale-105
+               bg-rose-400 text-white
+               hover:bg-rose-500 motion-safe:hover:scale-105
                motion-safe:transition-[transform,background-color] motion-safe:duration-200 ease-out
-               focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral-main"
+               focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-400"
         href="#">Reportar mascota &#x1F4CD;</a
       >
     </article>
@@ -72,10 +72,10 @@
 
 <style is:global>
   body:has(.card-green:hover) {
-    background-color: var(--color-green-hover);
+    background-color: var(--color-emerald-200);
   }
 
   body:has(.card-coral:hover) {
-    background-color: var(--color-coral-hover);
+    background-color: var(--color-rose-200);
   }
 </style>
