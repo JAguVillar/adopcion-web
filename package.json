@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/nunito": "^5.2.7",
     "@fontsource/bowlby-one": "^5.2.8",
     "@supabase/supabase-js": "^2.95.3",
     "@tailwindcss/vite": "^4.1.18",

@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "./tokens.css";
 @import "@fontsource/bowlby-one";
+@import "@fontsource-variable/nunito";
 
 @theme {
   /* ── Colors ── */
@@ -35,6 +36,7 @@
 
   /* ── Typography ── */
   --font-display: "Bowlby One", system-ui;
+  --font-body: "Nunito Variable", system-ui;
   --text-hero: clamp(1.9rem, 4.8vw, 3.4rem);
   --text-hero--line-height: 1;
 }
@@ -49,7 +51,7 @@
     @apply m-0 min-h-screen transition-colors duration-500 ease-out;
     background-color: var(--color-bg-main);
     color: var(--color-text-main);
-    font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+    font-family: var(--font-body);
   }
 
   a {
@@ -68,4 +70,12 @@
     min-height: calc(100svh - var(--hero-header-offset, 7.5rem));
     @apply box-border flex flex-col;
   }
+}
+
+h1 span {
+  font-size: var(--text-hero);
+}
+
+h2 span {
+  font-size: var(--text-hero);
 }
